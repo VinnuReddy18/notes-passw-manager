@@ -69,3 +69,75 @@ button {
     margin-top: 12px;
     transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
 }
+
+button:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:disabled {
+    background: #95a5a6;
+    cursor: not-allowed;
+}
+
+.main-content {
+    width: 70%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    border-left: 3px solid #e1e8ef;
+    background: #f9f9f9;
+}
+
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    box-sizing: border-box;
+    font-size: 1em;
+    background: #ffffff;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+textarea {
+    height: 180px;
+    resize: vertical;
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #dfe6e9;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.card p {
+    margin: 8px 0;
+    color: #7f8c8d;
+    line-height: 1.6;
+}
+
