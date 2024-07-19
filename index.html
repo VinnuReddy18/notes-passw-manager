@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes & Password Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Notes</h2>
+            <ul id="notes-list"></ul>
+            <button id="add-note-btn">Add Note</button>
+            <h2>Passwords</h2>
+            <ul id="passwords-list"></ul>
+            <button id="add-password-btn">Add Password</button>
+        </div>
+        <div class="main-content">
+            <div id="note-view" class="view hidden">
+                <input type="text" id="note-title" placeholder="Note Title">
+                <textarea id="note-content" placeholder="Write your note here..."></textarea>
+                <button id="save-note-btn">Save Note</button>
+                <button id="delete-note-btn">Delete Note</button>
+            </div>
+            <div id="password-view" class="view hidden">
+                <input type="text" id="password-site" placeholder="Social Site">
+                <input type="text" id="password-id" placeholder="ID">
+                <input type="password" id="password-pass" placeholder="Password">
+                <button id="save-password-btn">Save Password</button>
+                <button id="delete-password-btn">Delete Password</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
